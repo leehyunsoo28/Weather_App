@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>☀️날씨☀️</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <video class="background-video" muted autoplay loop>
+            <source src="video/snow.mp4">
+        </video>
+        <div class="all">
+            <div class="top">
+
+                <div class="search">
+                   <input class="search-input" type="text" placeholder="지역을 입력해주세요" onkeypress="region(event)">
+                   <img src="img/reading%20glasses.png" alt="">
+                </div>
+
+
+                <div class="favorites">
+                    <img src="img/star.png" alt="즐겨찾기">
+                </div>
+
+                <div class="setting">
+                    <img src="img/hamburger.png" alt="햄버거" class="setting_hamburger">
+                    <img src="img/X.png" alt="" class="setting_X">
+                </div>
+            </div>
+
+            <div>
+               <div class="setting_open">
+                    <button class="time_format">시간 형식</button><br>
+                    <button class="time_update">자동 갱신</button><br>
+                    <button class="movement">배경 효과</button><br>
+                </div>
+
+                <div class="mode_setting">
+                    <div class="time_format_child"> <!-- 시간 형식-->
+                        <p>시간 형식 변경</p>
+                        <button class="time_format_OT">12</button>
+                        <button class="time_format_TF">24</button><br>
+                        <button class="ok1">확인</button>
+                    </div>
+
+                    <div class="time_update_child"> <!-- 자동 갱신 -->
+                        <p>자동 갱신 시간을 정해주세요.</p>
+                        <input type="text" placeholder="분으로 계산됩니다." onkeypress="enter(event)">
+                        <button class="ok2">확인</button>
+                    </div>
+
+                    <div class="movement_child"> <!-- 배경 효과 -->
+                        <p>애니매이션</p>
+                        <button class="movement_on">on</button>
+                        <button class="movement_off">off</button><br>
+                        <button class="ok3">확인</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="left">
+                <div class="temperature">
+                   
+                    <!-- 기온 -->
+                    24°
+                </div>
+
+                <div class="location">
+                    <!-- 위치 -->
+                    서울, 대한민국
+                </div>
+
+                <div class="weather">
+                    <!-- 날씨 -->
+                    흐림
+                </div>
+
+                <div class="comment">
+                    <!-- 댓글(맨트) -->
+                    우산 챙기는 게 좋겠어요
+                </div>
+                <div class="TD">
+                    <div class="time"></div>
+                    <div class="date"></div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="hourly_forecast">
+                   <p>
+                       시간별 예보
+                   </p>
+                   <div style="display: flex; overflow: auto">
+                        <div class="now">
+                            <span>지금..</span>
+                            <img src="img/clouds.png" alt="#">
+                            <span>24°</span>
+                        </div>
+
+                        <div class="hourly_list now"></div>
+                    </div>
+                </div>
+
+                <div class="day7_forecast">
+                   <p>7일 예보</p>
+                   <div style="display: flex; overflow: scroll;">
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                       <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+
+                        <div class="day">
+                            지금
+                            <img src="img/clouds.png" alt="#">
+                            24°
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

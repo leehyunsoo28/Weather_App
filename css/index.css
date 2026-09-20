@@ -1,0 +1,216 @@
+/* 브라우저 세팅 */
+body {
+    position: relative;
+    /*border: 1px solid red;*/
+    height: 702px;
+    width: 1500px;
+    margin-top: 10%;
+    margin-left: 12%;
+    background-color: black;
+    color: white;
+}
+.all {
+    border: 1px solid white;
+    height: 700px;
+    overflow: hidden;
+}
+
+
+.background-video {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 1500px;
+    height: 702px;
+    object-fit: cover;
+    
+    background: rgba(0,0,0,0.3);
+
+    z-index: -1;
+}
+
+
+/* top */
+.top { display: flex; position: absolute; right: 0%; width: 300px; top: 2%;
+    /*border: 1px solid hotpink;*/
+}
+.search { 
+    /*border: 1px solid blue; */
+}
+.search-input { 
+    border: 1px solid pink; 
+    width: 200px; height: 20px;
+    background-color: none;
+}
+.search img { 
+    /*border: 1px solid black; */
+    width: 20px; height: 20px; 
+    position: absolute; left: -25px; top: 3px;
+}
+
+.favorites { 
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.favorites img {
+    /*border: 1px solid black; */
+    height: 20px;
+}
+
+.setting { 
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.setting img {
+    /*border: 1px solid black; */
+    height: 23px;
+}
+.setting_X { position: absolute; right: 32px; display: none; }
+
+.setting_open { 
+    display: none; 
+    position: absolute; right: 2.2%; top: 8%; 
+    width: 250px; height: 500px;
+    border: 1px dashed black;
+    background-color: #c6c6c6;
+}
+
+.setting_open button { 
+    border: none; background-color: #b7b7b7;  cursor: pointer;
+    margin-left: 20%;  margin-bottom: 10%; padding: 13px; 
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.setting_open button:nth-child(1) { margin-top: 10%; }
+
+.mode_setting { /*border: 1px dashed #123;*/ position: relative; }
+
+
+.time_format_child { 
+    display: none;
+    position: absolute; right: 2%; top: 50px; margin-right: 2%;
+    /*border: 1px solid blue;*/
+}
+.time_format_child p { /*border: 1px solid skyblue;*/}
+.time_format_child button { border: solid 1px black; width: 48%; }
+/* nth-of-type = 같은 타입만 계산 nth-child = 자식은 전부 계산함 */
+.time_format_child button:nth-of-type(3) { border: solid 1px black; width: 100% }
+.time_format_OT { background-color: black; color: white; }
+
+
+.time_update_child { 
+    display: none;
+    position: absolute; right: 2%; top: 50px; margin-right: 2%;
+    /*border: 1px solid blue;*/
+}
+.time_update_child input { height: 23px; /*border: 1px solid blue;*/ }
+.time_update_child button { margin-top: 1px; position: absolute; width: 40px; top: 55px; height: 29px;
+    border: 1px solid black; }
+
+.movement_child { 
+    display: none;
+    position: absolute; right: 2%; top: 50px; margin-right: 2%; width: 7%;
+    /*border: 1px solid red;*/
+}
+.movement_child p { /*border: 1px solid skyblue;*/ padding-left: 14%;}
+.movement_child button { border: solid 1px black; width: 48%; }
+/* nth-of-type = 같은 타입만 계산 nth-child = 자식은 전부 계산함 */
+.movement_child button:nth-of-type(3) { border: solid 1px black; width: 100% }
+.movement_on { background-color: black; color: white; }
+
+
+/* left */
+.left { 
+    /*border: solid 1px red;*/
+    position: relative; width: 30%; height: 83%; top: 100px; left: 50px; }
+.temperature { font-size: 150px; }
+.location { font-size: 25px; margin-top: 30px;}
+.weather { font-size: 25px; margin-top: 40px; }
+.comment { font-size: 25px; margin-top: 40px; }
+
+.TD { 
+    display: flex; margin-top: 30px; border-radius: 60px; 
+    /*border: 1px solid blue;*/ width: 250px; height: 30px;
+    margin-left: 10px; background: rgba(255, 255, 255, 0.5);
+    color : rgb(85,85,85);
+}
+.time { font-size: 20px; /*border: 1px solid blue;*/ margin-right: 10px; border-radius: 200px; 
+    width: 70px; text-align: center; background: rgba(255, 255, 255, 0.5); align-content: center;
+}
+.date { font-size: 20px; /*border: 1px solid skyblue;*/  text-align: center; 
+    align-content: center; }
+
+
+/* right */
+.right { 
+    /*border: 1px solid blue; */
+    position: absolute;
+    width: 60%; height: 83%; top: 100px; left: 550px; 
+}
+
+
+
+.hourly_forecast { 
+    border-radius: 20px;
+    border: 1px solid #888;
+    background-color: rgba(8,15,30,0.7);
+    height: 50%;
+}
+
+.hourly_forecast p { margin-left: 20px; 
+    position: sticky; top: 0; 
+}
+
+.now { 
+    /*border: 1px dashed red;*/
+    white-space: nowrap;
+    height: 130px; display: grid; padding-left: 20px; 
+    margin-top: 20px;
+    border-right: 1px solid white; 
+    flex-shrink: 0;
+    width: 50px;
+    align-content: center;
+}
+
+
+
+
+.now span { margin-bottom: 15px; }
+.now span:nth-child(3) { margin-top: 15px; margin-left: 3px;}
+
+
+
+
+.day7_forecast { 
+    width: 65%;
+    margin-top: 50px;
+    border: 1px solid #888; 
+    background-color: rgba(8,15,30,0.7);
+    border-radius: 20px;
+    height: 232px;
+    margin-left: 314px;
+}
+
+.day7_forecast p { margin-left: 20px; }
+
+.day { 
+    /*border: 1px dashed red; */
+    height: 130px; display: grid; padding-left: 25px;
+    white-space: nowrap;
+    padding-right: 20px; margin-top: 20px;
+    border-right: 1px solid white;
+    margin: auto;
+}
+.day:nth-child(7) { border: none; }
+
+
+
+
+
+
+
+
+
+
