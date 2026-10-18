@@ -233,8 +233,10 @@ fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=${API_KEY}
 
     });
 
-
-
+//const dayList = document.querySelector(".day_list");
+//fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Seoul&appid=${API_KEY}&units=metric&lang=kr`)
+//.then(response => response.json())
+//.then(data => {AbortController})
 
 // 맨트 변경
 //fetch(`https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=${API_KEY}&units=metric&lang=kr`)

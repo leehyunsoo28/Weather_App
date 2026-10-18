@@ -161,7 +161,18 @@ body {
 
 .hourly_forecast p { margin-left: 20px; 
     position: sticky; top: 0; 
+    
 }
+.hourly_list {
+    white-space: nowrap;
+    height: 130px; display: grid; padding-left: 20px; 
+    margin-top: 20px;
+    border-right: 1px solid white; 
+    flex-shrink: 0;
+    width: 50px;
+    align-content: center;
+}
+
 
 .now { 
     /*border: 1px dashed red;*/
@@ -172,6 +183,7 @@ body {
     flex-shrink: 0;
     width: 50px;
     align-content: center;
+    
 }
 
 
