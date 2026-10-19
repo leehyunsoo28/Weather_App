@@ -164,6 +164,7 @@ body {
     
 }
 .hourly_list {
+    /*
     white-space: nowrap;
     height: 130px; display: grid; padding-left: 20px; 
     margin-top: 20px;
@@ -171,11 +172,16 @@ body {
     flex-shrink: 0;
     width: 50px;
     align-content: center;
+    */
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
 }
 
+/*
 
 .now { 
-    /*border: 1px dashed red;*/
+    border: 1px dashed red;
     white-space: nowrap;
     height: 130px; display: grid; padding-left: 20px; 
     margin-top: 20px;
@@ -191,6 +197,35 @@ body {
 
 .now span { margin-bottom: 15px; }
 .now span:nth-child(3) { margin-top: 15px; margin-left: 3px;}
+*/
+
+.now {
+    flex: 0 0 80px;
+    box-sizing: border-box;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 0;
+    border-right: 1px solid white;
+    
+    /*border: 1px solid blue;*/
+}
+
+.now span {
+    white-space: nowrap;
+    /*border: 1px solid red;*/
+}
+
+.now img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    /*border: 1px solid black;*/
+}
 
 
 
